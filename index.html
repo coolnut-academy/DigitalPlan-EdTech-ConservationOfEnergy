@@ -27,7 +27,6 @@
         body { font-family: 'Sarabun', sans-serif; background-color: #f3f4f6; }
         h1, h2, h3, h4, h5, h6, .font-prompt { font-family: 'Prompt', sans-serif; }
         .math-display { overflow-x: auto; overflow-y: hidden; }
-        /* Removed conflicting iframe height CSS to fix PhET display */
     </style>
 </head>
 <body class="text-gray-800 pb-20">
@@ -42,7 +41,6 @@
                     <span class="text-xs text-indigo-200">Active Learning & Technology Integration</span>
                 </div>
             </div>
-            <!-- ปุ่มตั้งค่าถูกลบออกตามคำขอ -->
         </div>
     </nav>
 
@@ -76,7 +74,7 @@
                 </div>
             </div>
 
-            <!-- Innovation Link -->
+            <!-- Innovation Link & Download Button -->
             <div class="mt-6 p-4 bg-gradient-to-r from-cyan-600 to-blue-700 rounded-lg text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-4">
                     <div class="bg-white/20 p-3 rounded-full backdrop-blur-sm">
@@ -87,9 +85,18 @@
                         <p class="text-blue-100 text-sm">QuizPhysicsM4.2 - Conservation Of Energy</p>
                     </div>
                 </div>
-                <a href="https://coolnut-academy.github.io/QuizPhysicsM4.2-ConservationOfEnergy/" target="_blank" class="bg-white text-blue-700 px-6 py-2 rounded-full font-bold hover:bg-blue-50 transition shadow-md transform hover:scale-105">
-                    <i class="fa-solid fa-play mr-2"></i> เปิดใช้งาน App
-                </a>
+                
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <!-- New Button: Download -->
+                    <a href="https://drive.google.com/drive/folders/1t7ylbXk6bFDxvBFogBGms_e0D8c3Qh5G?usp=sharing" target="_blank" class="bg-white/20 border border-white/50 text-white px-5 py-2 rounded-full font-bold hover:bg-white/30 transition shadow-md flex items-center justify-center text-sm backdrop-blur-sm whitespace-nowrap">
+                        <i class="fa-brands fa-google-drive mr-2"></i> ดาวน์โหลดแผนฯ
+                    </a>
+                    
+                    <!-- Existing Button: Open App -->
+                    <a href="https://coolnut-academy.github.io/QuizPhysicsM4.2-ConservationOfEnergy/" target="_blank" class="bg-white text-blue-700 px-6 py-2 rounded-full font-bold hover:bg-blue-50 transition shadow-md transform hover:scale-105 flex items-center justify-center whitespace-nowrap">
+                        <i class="fa-solid fa-play mr-2"></i> เปิดใช้งาน App
+                    </a>
+                </div>
             </div>
         </header>
 
@@ -191,7 +198,7 @@
                                 <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-3">
                                     <p class="text-sm font-bold text-indigo-800 mb-2"><i class="fa-solid fa-vr-cardboard mr-2"></i>สื่อประกอบ: PhET Simulation (Energy Skate Park)</p>
                                     <p class="text-xs text-gray-600 mb-2">ใช้ Simulation นี้อธิบายความสัมพันธ์กราฟพลังงานจลน์และศักย์</p>
-                                    <!-- Fixed PhET Display using aspect ratio helper -->
+                                    <!-- Fixed PhET Display -->
                                     <div class="relative w-full aspect-video rounded-lg overflow-hidden shadow-sm bg-black">
                                         <iframe 
                                             src="https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_en.html" 
