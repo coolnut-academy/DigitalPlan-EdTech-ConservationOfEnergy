@@ -58,7 +58,7 @@
 
 1.  **Clone Repository:**
     ```bash
-    git clone [https://github.com/yourusername/QuizPhysicsM4.2-ConservationOfEnergy.git](https://github.com/yourusername/QuizPhysicsM4.2-ConservationOfEnergy.git)
+    git clone https://github.com/coolnut-academy/DigitalPlan-EdTech-ConservationOfEnergy
     ```
 2.  **Setup Backend:**
     * สร้าง Google Sheet ใหม่
